@@ -14,6 +14,14 @@ const productsController = {
     }
     return res.status(code).json(product);
   },
+
+  async addProduct(req, res) {
+    const { name } = req.body;
+    const { code, product } = await productsService.addProduct(name);
+
+    return res.status(code).json(product);
+  },
+
 };
 
 module.exports = productsController;

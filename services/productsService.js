@@ -14,6 +14,13 @@ const productsService = {
     }
     return { code: 200, product };
   },
+
+  async addProduct(name) {
+    const product = await productsModel.addProduct(name);
+
+    return { code: 201, product };
+  },
+
 };
 
 module.exports = productsService;
