@@ -10,7 +10,7 @@ const productsController = {
     const { id } = req.params;
     const { code, message, product } = await productsService.getProductsById(id);
     if (!product) {
-      return res.status(code).json(message);
+      return res.status(code).json({ message });
     }
     return res.status(code).json(product);
   },
