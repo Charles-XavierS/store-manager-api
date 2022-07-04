@@ -1,6 +1,6 @@
 const express = require('express');
 
-const routerProducts = express.Router();
+const routerProducts = require('./routes/productsRoutes');
 const midError = require('./middlewares/midError');
 
 const app = express();
