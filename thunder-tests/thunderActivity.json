@@ -8,12 +8,12 @@
     "method": "POST",
     "sortNum": 0,
     "created": "2022-07-01T19:25:18.573Z",
-    "modified": "2022-07-04T03:07:30.388Z",
+    "modified": "2022-07-04T03:18:25.473Z",
     "headers": [],
     "params": [],
     "body": {
       "type": "json",
-      "raw": "  {\n    \"name\": \"ProdutoX\"\n  }",
+      "raw": "  {\n    \"name\": \"asdasdasd\"\n  }",
       "form": []
     },
     "tests": []
