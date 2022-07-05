@@ -22,4 +22,11 @@ const byId = [
   ],
 ];
 
-module.exports = { allProducts, byId };
+const addProduct = [
+  {
+    id: 4,
+    name: 'Disparador de teias',
+  },
+];
+
+module.exports = { allProducts, byId, addProduct };

@@ -1,0 +1,9 @@
+const express = require('express');
+
+const salesController = require('../controllers/salesController');
+
+const salesProducts = express.Router();
+
+salesProducts.post('/', salesController.sales);
+
+module.exports = salesProducts;
