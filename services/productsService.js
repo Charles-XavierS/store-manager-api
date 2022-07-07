@@ -45,6 +45,16 @@ const productsService = {
     return { code: 200, product: { id, name } };
   },
 
+  async deleteProduct(id) {
+    const product = await productsModel.getProductsById(id);
+
+    if (!product) return { code: 404, message: 'Product not found' };
+
+    await productsModel.deleteProduct(id);
+
+    return { code: 204 };
+  },
+
 };
 
 module.exports = productsService;
